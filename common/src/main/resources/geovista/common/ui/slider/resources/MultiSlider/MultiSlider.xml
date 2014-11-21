@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE docbook [
+<!-- Build the expanded version by default -->
+<!ENTITY % review "INCLUDE">
+]>
+
+<article id="using -docbook">
+<?dbhtml filename="MultiSlider.html"?>
+<artheader>
+	<title>MultiSlider</title>
+	<author>
+		<firstname>Masahiro</firstname>
+		<surname>Takatsuka</surname>
+		<affiliation>
+			<address><email>jh9gpz@yahoo.com</email></address>
+		</affiliation>
+	</author>
+	<copyright>
+		<year>2002</year><holder>Masahiro Takatsuka</holder>
+	</copyright>
+</artheader>
+<revhistory>
+	<revision>
+		<revnumber>$Rev: rev$</revnumber>
+		<date>$Id: MultiSlider.xml,v 1.1.1.1 2003/02/28 14:54:07 jmacgill Exp $</date>
+	</revision>
+</revhistory>
+<para>
+The MultiSlider is a subclass of javax.swing.JSlider and provides multiple thumbs.  
+</para>
+<sect2>
+<title>Usage</title>
+<para>
+The MultiSlider component allows a user to create a multiple thumb slider.  The number of thumb can be specifed using setNumberOfThumbs(int) method.  If the slider is in "bounded" mode, a thumb cannot be dragged over its adjacent thumbs.
+</para>
+<para>
+<inlinemediaobject>
+<imageobject>
+<imagedata fileref="IconColor32.gif" format="GIF"/>
+</imageobject>
+</inlinemediaobject>
+The icon for the MultiSlider.
+</para>
+</sect2>
+
+<sect2>
+<title>Properties</title>
+<variablelist>
+<varlistentry>
+<term>numberOfThumbs</term>
+<listitem>
+<para>
+The number of thumbs.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>bounded</term>
+<listitem>
+<para>
+If it is true, a thumb cannot be dragged over its adjacent thumbs.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect2>
+
+<sect2>
+<title>Input Connectors</title>
+<para>
+N/A
+</para>
+</sect2>
+
+<sect2>
+<title>Output Connectors</title>
+<itemizedlist>
+<listitem>
+<para>ChangeListener : change.stateChanged</para>
+<para>
+Typical callback methods
+<itemizedlist>
+<listitem>
+(int) getValue() - returns the value for the current thumb.
+</listitem>
+<listitem>
+(int) getCurrentThumbIndex() - returns the index of the current thumb.
+</listitem>
+</itemizedlist>
+</para>
+</listitem>
+</itemizedlist>
+</sect2>
+</article>
