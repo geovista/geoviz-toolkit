@@ -1,0 +1,22 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>geovista</groupId>
+	<artifactId>projection</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>projection</name>
+	<url>http://maven.apache.org</url>
+	<!-- Inherits only JUnit and 1.5 compilation plugins from parent POM -->
+	<parent>
+		<groupId>geovista</groupId>
+		<artifactId>studio-modules</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+		<dependencies>
+		<dependency>
+			<groupId>geovista</groupId>
+			<artifactId>common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+			</dependencies>
+</project>
